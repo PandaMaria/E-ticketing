@@ -1,12 +1,12 @@
 # E-ticketing
 Lista obiecte folosite:
-Artisti
-Echipa
-Bilet
-Clienti
-Data
-Evenimente
-GenMuzica
+Artisti,
+Echipa,
+Bilet,
+Clienti,
+Data,
+Evenimente,
+GenMuzica,
 Locatie
 
 Lista de metode folosite:
