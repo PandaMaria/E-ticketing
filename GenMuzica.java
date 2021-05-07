@@ -1,9 +1,5 @@
 package Platforma;
 
-import Platforma.Echipa.Artisti;
-
-import java.util.Scanner;
-
 public class GenMuzica {
     private String genMuzical;
 
@@ -17,6 +13,13 @@ public class GenMuzica {
 
     public GenMuzica(String genMuzical) {
         this.genMuzical = genMuzical;
+    }
+
+    public GenMuzica(String gen, int i) {
+    }
+
+    public String toCSV() {
+        return genMuzical;
     }
 
     public String getGenMuzical() {

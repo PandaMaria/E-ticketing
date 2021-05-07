@@ -1,8 +1,5 @@
 package Platforma;
 
-import Platforma.Echipa.Artisti;
-import Platforma.Echipa.Echipa;
-
 public class Evenimente extends Locatie{
     private Boolean caritate;
     Locatie locatie = new Locatie();

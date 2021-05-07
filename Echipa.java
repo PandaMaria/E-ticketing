@@ -1,10 +1,9 @@
-package Platforma.Echipa;
+package Platforma;
 
+import Platforma.Artisti;
 import Platforma.GenMuzica;
 
-import java.util.Scanner;
-
-public class Echipa extends Artisti{
+public class Echipa extends Artisti {
     private String nume;
     private int buget;
     Artisti artist = new Artisti();
@@ -21,11 +20,13 @@ public class Echipa extends Artisti{
         this.buget = buget;
     }
 
-    public Echipa(GenMuzica gen, String nume, String nume1, int buget, Artisti artist) {
-        super(gen, nume);
-        this.nume = nume1;
-        this.buget = buget;
-        this.artist = artist;
+    public Echipa(String field, int parseInt, String field1, String field2) {
+    }
+
+    public Echipa(String name, int buget, int buget1) {
+    }
+
+    public Echipa(String field, int parseInt) {
     }
 
     public String getNume() {
@@ -51,4 +52,5 @@ public class Echipa extends Artisti{
     public void setArtist(Artisti artist) {
         this.artist = artist;
     }
+    
 }

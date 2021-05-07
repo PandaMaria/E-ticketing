@@ -1,11 +1,5 @@
 package Platforma;
 
-import Platforma.Echipa.Artisti;
-import Platforma.Echipa.Echipa;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Clienti extends Bilet{
     private int idClient;
     private String clientName;
