@@ -1,9 +1,5 @@
-package Platforma.Echipa;
+package Platforma;
 
-
-import Platforma.GenMuzica;
-
-import java.util.Scanner;
 
 public class Artisti extends GenMuzica {
     private String nume;
@@ -12,12 +8,20 @@ public class Artisti extends GenMuzica {
     public Artisti() {
         this.nume = nume;
     }
+
     public Artisti(String nume, GenMuzica gen) {
         super(gen);
         this.nume = nume;
     }
     public Artisti(Artisti artist) {
         this.nume = artist.nume;
+    }
+
+    public Artisti(String nume, String gen) {
+
+    }
+
+    public Artisti(String name, int i) {
     }
 
     public String getNume() {
@@ -33,6 +37,17 @@ public class Artisti extends GenMuzica {
     }
 
     public void setGen(GenMuzica gen) {
+        this.gen = gen;
+    }
+
+    public String toCSV() {
+        return nume +
+                "," + gen;
+    }
+
+    public Artisti(String genMuzical, String nume, GenMuzica gen) {
+        super(genMuzical);
+        this.nume = nume;
         this.gen = gen;
     }
 }

@@ -1,8 +1,5 @@
 package Platforma;
 
-import Platforma.Echipa.Artisti;
-import Platforma.Echipa.Echipa;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +20,7 @@ public class Main {
         Clienti Mara = new Clienti(bilet1,1, "Mara", "1000202353");
         Clienti Iona = new Clienti(bilet2,2, "Iona", "1056202353");
 
-        protected List<Clienti> clienti = new ArrayList<>();
+        List<Clienti> clienti = new ArrayList<>();
         listClienti(clienti, Mara);
         listClienti(clienti, Iona);
         System.out.println(showClienti());
@@ -41,5 +38,7 @@ public class Main {
         System.out.println(Aurora.getNume());
         System.out.println(echipa2.getBuget());
         System.out.println(Iona.getClientName());
+
     }
+
 }

@@ -1,8 +1,5 @@
 package Platforma;
 
-import Platforma.Echipa.Artisti;
-import Platforma.Echipa.Echipa;
-
 import java.util.Scanner;
 
 public class Locatie extends Echipa {
@@ -44,6 +41,12 @@ public class Locatie extends Echipa {
     public Locatie(String tara, String oras) {
         this.tara = tara;
         this.oras = oras;
+    }
+
+    public Locatie(String field, String field1, Echipa echipa) {
+    }
+
+    public Locatie(int i, Scanner in) {
     }
 
     public String getTara() {
