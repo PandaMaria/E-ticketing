@@ -1,10 +1,23 @@
 package Platforma;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        try {
+            String host = "jdbc:derby://localhost:58852/mariadb";
+            String uName = "root";
+            String uPass= " iomacova ";
+        }
+        catch ( SQLException err ) {
+            System.out.println( err.getMessage( ) );
+        }
+
+
         GenMuzica rock = new GenMuzica("rock");
         GenMuzica indie = new GenMuzica("indie");
         Artisti Aurora = new Artisti("Aurora", indie);
