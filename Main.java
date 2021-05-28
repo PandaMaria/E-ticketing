@@ -1,21 +1,21 @@
 package Platforma;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            String host = "jdbc:derby://localhost:58852/mariadb";
-            String uName = "root";
-            String uPass= " iomacova ";
-        }
-        catch ( SQLException err ) {
-            System.out.println( err.getMessage( ) );
-        }
+        Class.forName("oracle.jdbc.driver.OracleDriver");
+        Connection con=DriverManager.getConnection(
+                "jdbc:oracle:thin:@localhost:1521:xe","user1","iomacova");
+        Statement stmt=con.createStatement();
+        ResultSet rs=stmt.executeQuery("select * from emp");
+        while(rs.next())
+            System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+        con.close();
+
+    }catch(Exception e){ System.out.println(e);}
 
 
         GenMuzica rock = new GenMuzica("rock");
